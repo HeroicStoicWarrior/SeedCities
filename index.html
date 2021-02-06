@@ -148,6 +148,19 @@
             <ul class="mdl-mini-footer__link-list">
               <li><a href="#">Privacy & Terms</a></li>
             </ul>
+            <script>
+              window.watsonAssistantChatOptions = {
+                  integrationID: "4d4eb7b2-1d91-4c89-be8e-11ecdb10c4cf", // The ID of this integration.
+                  region: "us-south", // The region your integration is hosted in.
+                  serviceInstanceID: "495c56ec-4ef9-4cea-94ab-3598f96a1d57", // The ID of your service instance.
+                  onLoad: function(instance) { instance.render(); }
+                };
+              setTimeout(function(){
+                const t=document.createElement('script');
+                t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+                document.head.appendChild(t);
+              });
+            </script>
           </div>
         </footer>
       </main>
